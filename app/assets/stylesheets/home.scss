@@ -1,3 +1,39 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+$red: #FF3434;
+$orange: #FFA500;
+
+.red{
+    color: $red;
+}
+
+#wrapper{
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    height: 100px;
+    background-color: $orange;
+}
+
+header h1{
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#main.top{
+    text-align: center;
+    display: table;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+#main.top h2{
+    display: table-cell;
+    height: 100vh;
+    vertical-align: middle;
+}
