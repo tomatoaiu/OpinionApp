@@ -4,6 +4,7 @@
 
 $red: #FF3434;
 $orange: #FFA500;
+$windowheight: 100vh;
 
 .red{
     color: $red;
@@ -14,26 +15,42 @@ $orange: #FFA500;
     height: 100vh;
 }
 
+/* header */
+/******************************************/
+
 header{
+    display: inline-block;
     height: 100px;
-    background-color: $orange;
+    width: 100vw;
+    // background-color: $orange;
 }
 
 header h1{
-    display: inline-block;
+    // display: inline-block;
     margin-left: 20px;
     margin-top: 20px;
 }
 
-#main.top{
-    text-align: center;
-    display: table;
-    margin: 0 auto;
-    height: 100vh;
-}
 
-#main.top h2{
-    display: table-cell;
+/* top */
+/******************************************/
+
+$topimageleft: #ee0979;
+$topimageright: #ffa934;
+
+#wrapper.top{
+    width: 100vw;
     height: 100vh;
-    vertical-align: middle;
+    background: -webkit-linear-gradient(left, rgba($topimageleft, 0.8), rgba($topimageright, 0.8)), url(/top_main.png) no-repeat top/cover;
+    background: linear-gradient(90deg, rgba($topimageleft, 0.8), rgba($topimageright, 0.8)), url(/top_main.png) no-repeat top/cover;
+}
+#main.top{
+    min-height: calc(100vh - 200px);
+    // min-height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 40px;
+    color: $orange;
+    clear: both;
 }
